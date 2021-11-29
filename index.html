@@ -18,14 +18,18 @@
 			<main>
 				<div class="number">
 					Grid Precision
-					<input
-						type="range"
-						value="16"
-						min="2"
-						max="64"
-						step="1"
-						id="userNumber"
-					/>
+					<form name="gridSize">
+						<input
+							type="range"
+							value="16"
+							min="1"
+							max="64"
+							step="1"
+							id="userNumber"
+							oninput="gridSizeDisplay.value = userNumber.value"
+						/>
+						<output name="gridSize" id="gridSizeDisplay">16</output>
+					</form>
 					<button id="resizeButton">Resize</button>
 				</div>
 				<div id="gameGrid"></div>
