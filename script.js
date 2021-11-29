@@ -1,5 +1,5 @@
 //init userNumber
-let userNumber;
+let userNumber = 16;
 //create resizeButton attached to resizeButton HTML element
 const resizeButton = document.getElementById('resizeButton');
 //create gameGrid attached to gameGrid HTML element
@@ -45,3 +45,8 @@ resizeButton.addEventListener('click', function () {
 		addBlocks();
 	}
 });
+
+//init app
+for (let i = 0; i < userNumber ** 2; i++) {
+	addBlocks();
+}

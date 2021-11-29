@@ -71,7 +71,7 @@ footer {
 
 .number input {
 	font-size: 21px;
-	max-width: 50px;
+	max-width: 40vmin;
 	border: 2px solid #181b25;
 	border-radius: 0;
 	background-color: #f9f1dc;
